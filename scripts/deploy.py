@@ -31,7 +31,7 @@ def deploy_token_farm_and_dapp_token(front_end_update=False):
     }
     add_allowed_tokens(token_farm, dict_of_allowed_tokens, account)
     if front_end_update:
-        front_end_update()
+        update_front_end()
     return token_farm, dapp_token
 
 def add_allowed_tokens(token_farm, dict_of_allowed_tokens, account):
