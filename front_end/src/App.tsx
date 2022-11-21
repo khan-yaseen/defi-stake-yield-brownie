@@ -8,7 +8,11 @@ function App() {
   return (
     <DAppProvider
       config={{
-        networks: [Goerli]
+        networks: [Goerli],
+        notifications: {
+          expirationPeriod: 1000,
+          checkInterval: 1000
+        }
       }}
     >
       <Header />
